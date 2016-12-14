@@ -33,42 +33,45 @@ body
     width: 200px
     +border-radius(5px)
   .column-container
-    margin-top: 30px
-    
-  .column
-    margin: 10px
-    float: left
-    width: 370px
-    min-height: 700px
-    background-color: rgba(255, 255, 255, 0.5)
-    +border-radius(5px)
-    position: relative
-    .column-title
-      margin: 10px 30px
-      text-align: right
-    .btn-delete
+    display: block
+    width: 1200px
+    margin: 0 auto
+    text-align: center
+    .column
       display: block
-      width: 25px
-      height: 25px
-      position: absolute
-      bottom: 10px
-      right: 10px
+      margin: 10px
+      float: left
+      width: 370px
+      min-height: 300px
+      background-color: rgba(255, 255, 255, 0.5)
       +border-radius(5px)
-      background-color: #F00
-    .column-card-list
-      margin: 20px auto
-      width: 90%
-      min-height: 500px
-      list-style-type: none
-      .card
-        margin: 0 20px 10px 0
-        position: relative
-        min-height: 50px
-        background-color: rgba(255, 255, 255, 0.5)
+      position: relative
+      .column-title
+        margin: 10px 30px
+        text-align: right
+      .btn-delete
+        display: block
+        width: 25px
+        height: 25px
+        position: absolute
+        bottom: 10px
+        right: 10px
         +border-radius(5px)
-        text-align: left
-        padding: 3px
-    .add-card
-      height: 30px
-      width: 100px
-      +border-radius(5px)
+        background-color: #F00
+      .column-card-list
+        margin: 20px auto
+        width: 90%
+        min-height: 200px
+        list-style-type: none
+        .card
+          margin: 0 20px 10px 0
+          position: relative
+          min-height: 50px
+          background-color: rgba(255, 255, 255, 0.5)
+          +border-radius(5px)
+          text-align: left
+          padding: 3px
+      .add-card
+        height: 30px
+        width: 100px
+        +border-radius(5px)

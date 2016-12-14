@@ -1,35 +1,80 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
+body {
+  background-image: url(https://images.pexels.com/photos/8980/pexels-photo.jpeg?h=350&auto=compress&cs=tinysrgb);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center; }
 
-}
+.board {
+  margin: 0 auto;
+  max-width: 90%; }
+  .board h1 {
+    margin: 20px 0;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+  .board .create-column {
+    height: 50px;
+    width: 200px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+  .board .column-container {
+    margin-top: 30px; }
+  .board .column {
+    margin: 10px;
+    float: left;
+    width: 370px;
+    min-height: 700px;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: relative; }
+    .board .column .column-title {
+      margin: 10px 30px;
+      text-align: right; }
+    .board .column .btn-delete {
+      display: block;
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      background-color: #F00; }
+    .board .column .column-card-list {
+      margin: 20px auto;
+      width: 90%;
+      min-height: 500px;
+      list-style-type: none; }
+      .board .column .column-card-list .card {
+        margin: 0 20px 10px 0;
+        position: relative;
+        min-height: 50px;
+        background-color: rgba(255, 255, 255, 0.5);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        text-align: left;
+        padding: 3px; }
+    .board .column .add-card {
+      height: 30px;
+      width: 100px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px; }
 
-.carousel {
-	margin: 0 auto;
-	width: 400px;
-	height: 300px;
-	overflow: hidden;
-}
-
-.carousel ul {
-	font-size: 0;
-	position: relative;
-	list-style: none;
-	width: 2000px;
-	list-style-type: none;
-	float: left;
-}
-
-.carousel ul li {
-	display: inline-block;
-	width: 400px;
-	height: 300px;
-}
-
-.carousel ul li img {
-	width: 400px;
-	height: 300px;
-	object-fit: cover;
-}
+/*# sourceMappingURL=style.css.map */

@@ -42,14 +42,14 @@ $(function() {
 	
 	Column.prototype = {
 		addCard: function(card) {
-			this.$element.childern('ul').append(card.$element);
+			this.$element.children('ul').append(card.$element);
 		},
 		removeColumn: function() {
 			this.$element.remove();
 		}
 	};
 	
-	function Card() {
+	function Card(description) {
 		var self = this;
 		
 		this.id = randomString();
@@ -86,7 +86,7 @@ $(function() {
 			this.$element.append(column.$element);
 			initSortable();
 		},
-		element: $('#board .column-container')
+		$element: $('#board .column-container')
 	};
 	
 	function initSortable() {
